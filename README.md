@@ -1,3 +1,5 @@
-# Algo
+#                                                                            Algo  
+-----  
+
 Some important Algorithem ...
 Can be helpful .....
