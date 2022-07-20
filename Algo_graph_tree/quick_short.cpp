@@ -44,7 +44,7 @@ int main()
     for (int i = 0; i < n; i++)
     {
         //cin >> a[i];
-        a[i]=rand();
+        a[i]=rand()%99;
     }
 
     __quick_sort(a, 0, n);

@@ -86,9 +86,10 @@ int main()
         cout << endl;
     }
 
-    _Find_DAG(nodes);
+    //_Find_DAG(nodes);
 
-    cout << "Total Node in Directed_Acyclic_Graph = " << scc << endl;
+    //cout << "Total Node in Directed_Acyclic_Graph = " << scc << endl;
+    
     /* for (int i = 0; i < scc; i++)
      {
          cout << i << " --> ";
@@ -107,30 +108,3 @@ int main()
 
     return 0;
 }
-/**
-7 8
-0 1
-1 2
-2 0
-5 6
-6 4
-4 5
-2 3
-3 4
-
-
-8 12
-0 1
-7 1
-1 6
-6 7
-6 0
-0 4
-6 4
-6 5
-5 3
-3 4
-4 2
-2 3
-
-*/

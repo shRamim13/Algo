@@ -38,8 +38,8 @@ void heapSort(int arr[], int n)
         heapify(arr, n, i);
     }
 
-    // One by one extract an element from heap
-    for (int i = n - 1; i > 0; i--)
+    // One by one extract an element from heap (((   sorting   )))
+    for (int i = n - 1; i >  0; i--)
     {
         // Move current root to end
         swap(arr[0], arr[i]);

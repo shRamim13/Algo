@@ -17,7 +17,7 @@ int main()
                 dis[i][j] = INF;
         }
     }
-    cout << "Enter Nodes &Edges --> ";
+    cout << "Enter Nodes & Edges --> ";
     int nodes, edges;
     cin >> nodes >> edges;
 
@@ -45,7 +45,7 @@ int main()
         for (int j = 1; j <= nodes; j++)
         {
             if (dis[i][j] == INF)
-                cout << "I"
+                cout << "x"
                      << " ";
             else
                 cout << dis[i][j] << " ";

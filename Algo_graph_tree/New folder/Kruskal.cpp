@@ -23,7 +23,7 @@ void Union(int a, int b)
     b = find_Parent(b);
     if (a != b)
     {
-        if (sz[a] < sz[b])
+        if (sz[a] < sz[b]) // path compression
         {
             swap(a, b);
         }
@@ -51,6 +51,31 @@ int main()
         make_Set(i);
     }
 
+    /***
+    6 9
+    5 4 9
+    1 4 1
+    5 1 4
+    4 3 5
+    4 2 3
+    1 2 2
+    3 2 3
+    3 6 8
+    2 6 7
+
+    9 10
+    1 8 5
+    1 3 1
+    8 9 6
+    3 9 3
+    3 7 7
+    4 9 2
+    9 2 10
+    4 5 12
+    4 6 7
+    7 6 11
+    */
+
     int total_Cost = 0;
     cout << "Minimum Spanning tree --> \n";
     for (auto &edge : edges)
@@ -64,35 +89,9 @@ int main()
         Union(u, v);
 
         total_Cost += wt;
-        cout << u << " --> " << v << " (" << wt <<")"<< endl;
+        cout << u << " --> " << v << " (" << wt << ")" << endl;
     }
     cout << "Total Cost --> ";
     cout << total_Cost << endl;
     return 0;
 }
-
-/***
-6 9
-5 4 9
-1 4 1
-5 1 4
-4 3 5
-4 2 3
-1 2 2
-3 2 3
-3 6 8
-2 6 7
-
-
-9 10
-1 8 5
-1 3 1
-8 9 6
-3 9 3
-3 7 7
-4 9 2
-9 2 10
-4 5 12
-4 6 7
-7 6 11
-*/

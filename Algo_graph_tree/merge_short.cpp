@@ -59,7 +59,7 @@ int main()
     int arr[n + 1];
     for (int i = 0; i < n; i++)
     {
-        arr[i] = rand();
+        arr[i] = rand()%9;
     }
 
     merge_sort(arr, 0, n - 1);
